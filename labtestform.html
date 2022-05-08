@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+    <link rel="stylesheet" href="labtestform.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="left">
+                <form>
+                    <fieldset>
+                        <legend>1. Your Contact Details</legend>
+                        <input type="text" id="fname" name="fullname" placeholder="Full Name">
+                        <input type="text" id="patientid" name="patientid" placeholder="Patient Id if exists"><br>
+                        <input type="text" id="contact" name="contact" placeholder="Contact Number">
+                        <input type="text" id="emailid" name="emailid" placeholder="Email Id"><br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>2. Address</legend>
+                        <input type="text" id="hno" name="hno" placeholder="House No.">
+                        <input type="text" id="street" name="street" placeholder="Street"><br>
+                        <input type="text" id="area" name="area" placeholder="Area"><br>
+                        <label for="district">District:</label>
+                        <select name="district" id="district">
+                            <option value="Choose">Choose</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Kanchipuram">Kanchipuram</option>
+                            <option value="Kaniyakumari">Kaniyakumari</option>
+                            <option value="Tuticorin">Tuticorin</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>3. Choose the Test Type</legend>
+                        <p>*Choose atleast one box without fail</p>
+                        <input type="checkbox" id="CBC" name="CBC" value="CBC">
+                        <label for="CBC"> CBC</label><br>
+                        <input type="checkbox" id="completeurine" name="completeurine" value="completeurine">
+                        <label for="completeurine"> Complete Urine </label><br>
+                        <input type="checkbox" id="lipid" name="lipid" value="lipid">
+                        <label for="lipid"> Lipid Profile</label><br>
+                        <input type="checkbox" id="tsh" name="tsh" value="tsh">
+                        <label for="tsh"> Thyroid Stimulating Hormone(TSH)</label><br>
+                        <input type="checkbox" id="Glucose" name="Glucose" value="Glucose">
+                        <label for="Glucose"> Glucose Test</label><br>
+                        <br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>4. Do you want a hard copy of the report also?</legend>
+                        <input type="radio" id="yes" name="hardcopy" value="yes">
+                        <label for="yes">Yes</label><br>
+                        <input type="radio" id="no" name="hardcopy" value="no">
+                        <label for="no">No</label><br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>5. Select Your Comfortable Date and Time</legend>
+                        <label for="testdate">Select a date and time:</label>
+                        <input type="datetime-local" id="testdate" name="testdate">
+                    </fieldset>
+
+                </form>
+            </div>
+
+            <div class="right">
+                <img src="./Images/Lab-Test/lab-test.jpg">
+            </div>
+        </div>
+    </div>
+</body>
